@@ -1,5 +1,5 @@
 -h, --help                  Display this help and exit
--g, --generate              Generate secret and public key
+-g, --generate              Generate the keypair
 -e, --encrypt   <str>       Encrypt the specified file
 -d, --decrypt   <str>       Decrypt the specified file
 -o, --output    <str>       Set output file
