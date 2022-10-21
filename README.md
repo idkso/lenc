@@ -42,11 +42,11 @@ info: wrote public key to key.pub
 ```
 encrypting a file
 ```
-$ ./zig-out/bin/enc -e build.zig -o build.zig.enc -p target.pub -s mykey.sec -c 75kb
+$ ./zig-out/bin/enc -e build.zig -o build.zig.lenc -p target.pub -s mykey.sec -c 75kb
 ```
 decrypting a file
 ```
-$ ./zig-out/bin/enc -d build.zig.enc -p target.pub -s mykey.sec
+$ ./zig-out/bin/enc -d build.zig.lenc -p target.pub -s mykey.sec
 ```
 # TODO
 - dedicated folder in `$HOME` or `$HOME/.config` for keys
