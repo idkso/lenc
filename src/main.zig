@@ -5,6 +5,7 @@ const Args = @import("args.zig");
 const File = @import("file.zig");
 
 pub const panic = @import("panic.zig").panic;
+pub const log_level = .info;
 
 pub const MAX_SIZE = 1024 * 1024 * 1024 * 512;
 
