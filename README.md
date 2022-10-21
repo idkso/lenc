@@ -11,7 +11,7 @@ $ ./zig-out/bin/enc -h
             Display this help and exit
 
     -g, --generate
-            Generate secret and public key
+            Generate the keypair
 
     -e, --encrypt <str>
             Encrypt the specified file
