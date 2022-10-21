@@ -1,2 +1,3 @@
-B64(B64(NONCE)\nB64(MAC)\nB64(ENC(TEXT)))
-B64(B64(NONCE)\nB64(MAC)\nB64(ENC(TEXT)))
+B64(B64(NONCE)\nB64(MAC)\nB64(ENC(TEXT))) // chunk 1
+B64(B64(NONCE)\nB64(MAC)\nB64(ENC(TEXT))) // chunk 2
+... // can go on infinitely
