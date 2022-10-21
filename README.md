@@ -1,5 +1,6 @@
 # lenc
 my bootleg gpg/pgp alternative in zig
+
 `format.txt` contains the encrypted file format
 
 idk what to put here so msg me on discord at `lenny#5884` if u have any ideas
