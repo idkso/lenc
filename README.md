@@ -51,3 +51,4 @@ $ ./zig-out/bin/enc -d build.zig.enc -p target.pub -s mykey.sec
 - dedicated folder in `$HOME` or `$HOME/.config` for keys
 - password protected secret keys
 - compression
+- pubkey regeneration
