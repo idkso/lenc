@@ -1,0 +1,8 @@
+-h, --help                  Display this help and exit
+-g, --generate              Generate secret and public key
+-e, --encrypt   <str>       Encrypt the specified file
+-d, --decrypt   <str>       Decrypt the specified file
+-o, --output    <str>       Set output file
+-p, --pubkey    <str>       Set the public key file to encrypt to
+-s, --seckey    <str>       Set the secret key file to encrypt with
+-c, --chunksize <str>       Set the chunk size (must have 2x the chunk size of free ram)
