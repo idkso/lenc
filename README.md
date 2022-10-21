@@ -53,3 +53,4 @@ $ ./zig-out/bin/enc -d build.zig.enc -p target.pub -s mykey.sec
 - password protected secret keys
 - compression
 - pubkey regeneration
+- multi-recipient support
