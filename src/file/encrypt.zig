@@ -76,4 +76,5 @@ pub fn write(alloc: std.mem.Allocator, shared: [32]u8, file: *std.fs.File, outpu
         var out = Context.ec.encode(buf, fuck[i..len]);
         _ = try output.writeAll(out);
     }
+    _ = try output.writeAll("\n");
 }
