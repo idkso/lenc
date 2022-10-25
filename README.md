@@ -5,7 +5,7 @@ Bootleg gpg/pgp alternative written in zig
 # Build 
 
 ```bash
-git clone https://github.com/idkso/lenc
+git clone https://github.com/idkso/lenc --recurse-submodules
 cd lenc
 zig build
 ```
