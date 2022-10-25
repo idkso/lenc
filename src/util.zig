@@ -5,7 +5,7 @@ const Encryption = @import("context.zig");
 
 pub fn err(msg: []const u8) noreturn {
     std.debug.print("err: {s}\n", .{msg});
-    std.debug.print("use the -h flag for cli usage\n", .{});
+    std.debug.print("use the '-h' flag for help\n", .{});
     std.os.exit(1);
 }
 
