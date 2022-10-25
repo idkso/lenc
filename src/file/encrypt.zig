@@ -1,5 +1,6 @@
 const std = @import("std");
 const util = @import("../util.zig");
+const err = @import("error.zig");
 
 const Context = @import("../context.zig");
 
@@ -43,7 +44,7 @@ pub fn write(alloc: std.mem.Allocator, shared: [32]u8, file: *std.fs.File, outpu
     var len = try reader.read(buf);
     var text = buf[0..len];
 
-    var res = try Context.encrypt(null, alloc, null, shared, text, null);
+    var res = Context.encrypt(null, alloc, null, shared, text, null) catch |e| err.err(e);
     alloc.free(buf);
 
     var nonce = try Context.encode(alloc, &res.nonce);

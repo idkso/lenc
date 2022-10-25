@@ -1,5 +1,6 @@
 const std = @import("std");
 const util = @import("../util.zig");
+const err = @import("error.zig");
 
 const Context = @import("../context.zig");
 
@@ -60,7 +61,7 @@ pub fn read(alloc: std.mem.Allocator, shared: [32]u8, file: *std.fs.File, output
     text = try Context.decode(alloc, txt[noncelen + taglen + 2 ..]);
     defer alloc.free(text);
 
-    var out = try Context.decrypt(null, alloc, util.toStack(tag, 16), util.toStack(nonce, 24), null, shared, text, null);
+    var out = Context.decrypt(null, alloc, util.toStack(tag, 16), util.toStack(nonce, 24), null, shared, text, null) catch |e| err.err(e);
     defer alloc.free(out);
 
     _ = try output.writeAll(out);
