@@ -10,7 +10,7 @@ cd lenc
 zig build
 ```
 
-# usage
+# Usage
 ```
 -h, --help
     Display this help and exit
