@@ -66,7 +66,7 @@ pub fn parseSize(raw: []const u8) !usize {
         return error.InvalidUnit;
     }
 
-    return @floatToInt(u64, @floor(switch (x.get(y).?) {
+    return @floatToInt(usize, @floor(switch (x.get(y).?) {
         .KB => idk * kilobyte,
         .KiB => idk * kibibyte,
         .MB => idk * megabyte,

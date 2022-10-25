@@ -5,7 +5,7 @@ const util = @import("util.zig");
 const Args = @This();
 
 alloc: std.mem.Allocator,
-cmd: Command = .generate,
+cmd: Command = .none,
 file: ?[]const u8 = null,
 output: ?[]const u8 = null,
 pubkey: ?[]const u8 = null,
@@ -97,6 +97,7 @@ pub fn parse(alloc: std.mem.Allocator) !Args {
 }
 
 pub const Command = enum {
+    none,
     generate,
     encrypt,
     decrypt,

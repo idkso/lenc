@@ -33,5 +33,6 @@ pub fn main() !void {
             args.file orelse util.err("no file specified"),
             args.output,
         ),
+        .none => util.err("no command specified, use '-h' flag for usage"),
     }
 }
