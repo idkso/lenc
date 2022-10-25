@@ -5,6 +5,15 @@ my bootleg gpg/pgp alternative in zig
 
 idk what to put here so msg me on discord at `lenny#5884` if u have any ideas
 
+# building
+```
+$ git clone https://github.com/idkso/lenc.git --recursive
+$ cd lenc
+$ zig build -Drelease-fast=true
+or if you want to ensure safety in exchange for performance
+$ zig build -Drelease-safe=true
+```
+
 # usage
 ```
 $ ./zig-out/bin/enc -h
